@@ -23,6 +23,8 @@
     UIImage * img = [UIImage imageNamed: @"lilpet001.png"];
     UIImageView *iv = [[UIImageView alloc] initWithImage: img];
     
+    iv.frame = CGRectMake(100, 50, iv.frame.size.width/ 2, iv.frame.size.height/2);
+    
     [self.view addSubview: iv];
    // lilpet001
 }
