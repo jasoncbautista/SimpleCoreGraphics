@@ -19,12 +19,56 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    /*
     NSLog(@"Loading... =-)");
     
     
     Rectangler * rectangler = [[Rectangler alloc] initWithFrame: CGRectMake(0, 0, 320, 480) ];
     
     [self.view addSubview: rectangler];
+    */
+    
+    /*
+    NSURL *url = [NSURL URLWithString: @"http://lorempixel.com/200/200/"];
+    NSData *data = [NSData dataWithContentsOfURL: url];
+    
+    UIImage *img = [[UIImage alloc] initWithData: data];
+    
+    CGSize size = img.size;
+    
+    UIImage *iv = [[UIImageView alloc] initWithImage: img];
+    
+    [self.view addSubview: iv];
+     */
+    
+    NSURL *url = [NSURL URLWithString: @"http://lorempixel.com/400/400/"];
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+        if([data length] > 0 && error == nil && [httpResponse statusCode] == 200  ){
+            
+            UIImage *img = [[UIImage alloc] initWithData: data];
+            
+            CGSize size = img.size;
+            
+            UIImage *iv = [[UIImageView alloc] initWithImage: img];
+            
+            [self.view addSubview: iv];
+            
+        } else {
+           NSLog(@"Error ");
+            
+        
+        }
+        
+        
+    }];
+    
+    
     
     /*
     UIImage * img = [UIImage imageNamed: @"lilpet001.png"];
