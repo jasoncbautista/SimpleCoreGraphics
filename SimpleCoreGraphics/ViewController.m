@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Rectangler.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,12 @@
     
     NSLog(@"Loading... =-)");
     
+    
+    Rectangler * rectangler = [[Rectangler alloc] initWithFrame: CGRectMake(0, 0, 320, 480) ];
+    
+    [self.view addSubview: rectangler];
+    
+    /*
     UIImage * img = [UIImage imageNamed: @"lilpet001.png"];
     UIImageView *iv = [[UIImageView alloc] initWithImage: img];
     
@@ -27,6 +34,7 @@
     
     [self.view addSubview: iv];
    // lilpet001
+    */
 }
 
 - (void)didReceiveMemoryWarning {

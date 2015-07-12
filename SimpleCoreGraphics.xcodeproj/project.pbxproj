@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D0C1461B51EC6A00990A21 /* Rectangler.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D0C1451B51EC6A00990A21 /* Rectangler.m */; };
 		07D721481B51DDDB00D0FCA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D721471B51DDDB00D0FCA3 /* main.m */; };
 		07D7214B1B51DDDB00D0FCA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7214A1B51DDDB00D0FCA3 /* AppDelegate.m */; };
 		07D7214E1B51DDDB00D0FCA3 /* SimpleCoreGraphics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07D7214C1B51DDDB00D0FCA3 /* SimpleCoreGraphics.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D0C1441B51EC6A00990A21 /* Rectangler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Rectangler.h; path = ../Rectangler.h; sourceTree = "<group>"; };
+		07D0C1451B51EC6A00990A21 /* Rectangler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Rectangler.m; path = ../Rectangler.m; sourceTree = "<group>"; };
 		07D721421B51DDDB00D0FCA3 /* SimpleCoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D721461B51DDDB00D0FCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D721471B51DDDB00D0FCA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 		07D721441B51DDDB00D0FCA3 /* SimpleCoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				07D0C1441B51EC6A00990A21 /* Rectangler.h */,
+				07D0C1451B51EC6A00990A21 /* Rectangler.m */,
 				07D7216E1B51DE7C00D0FCA3 /* lilpet001.png */,
 				07D721491B51DDDB00D0FCA3 /* AppDelegate.h */,
 				07D7214A1B51DDDB00D0FCA3 /* AppDelegate.m */,
@@ -228,6 +233,7 @@
 			files = (
 				07D7214B1B51DDDB00D0FCA3 /* AppDelegate.m in Sources */,
 				07D7214E1B51DDDB00D0FCA3 /* SimpleCoreGraphics.xcdatamodeld in Sources */,
+				07D0C1461B51EC6A00990A21 /* Rectangler.m in Sources */,
 				07D721511B51DDDB00D0FCA3 /* ViewController.m in Sources */,
 				07D721481B51DDDB00D0FCA3 /* main.m in Sources */,
 			);
@@ -424,6 +430,7 @@
 				07D7216A1B51DDDB00D0FCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07D7216B1B51DDDB00D0FCA3 /* Build configuration list for PBXNativeTarget "SimpleCoreGraphicsTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				07D7216D1B51DDDB00D0FCA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
